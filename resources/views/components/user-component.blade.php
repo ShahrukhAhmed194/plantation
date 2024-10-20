@@ -5,12 +5,13 @@
 <!-- Sidebar scroll-->
 <div>
     <div class="brand-logo d-flex align-items-center justify-content-between">
-    <a href="/home" class="text-nowrap logo-img">
-        <img src="{{ asset('assets/modernize/images/logos/dark-logo.svg')}}" class="dark-logo"  width="180" alt="" />
-    </a>
-    <div class="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
-        <i class="ti ti-x fs-8"></i>
-    </div>
+        <a href="/" class="text-nowrap logo-img">
+          <img src="{{ asset('assets/img/favicon.png')}}" class="dark-logo"  width="40" alt="" />
+          <span class="hide-menu" style="margin-left:20px; font-size:25px">Plantation</span>
+        </a>
+        <div class="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+          <i class="ti ti-x fs-8"></i>
+        </div>
     </div>
     <!-- Sidebar navigation-->
     <nav class="sidebar-nav scroll-sidebar" data-simplebar>
@@ -66,13 +67,13 @@
         </a>
         </li>
     </ul>
-    <div class="d-block d-lg-none">
-        <img src="{{ asset('assets/modernize/images/logos/dark-logo.svg')}}" class="dark-logo" width="180" alt="" />
+    {{-- <div class="d-block d-lg-none">
+        <img src="{{ asset('assets/img/favicon.png')}}" class="dark-logo" width="180" alt="" />
         <img src="{{ asset('assets/modernize/images/logos/light-logo.svg')}}" class="light-logo"  width="180" alt="" />
-    </div>
+    </div> --}}
     <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="p-2">
-        <i class="ti ti-dots fs-7"></i>
+        {{-- <i class="ti ti-dots fs-7"></i> --}}
         </span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">

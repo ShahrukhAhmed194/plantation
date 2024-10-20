@@ -3,12 +3,12 @@
 @section('content')
     <div class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
         <div class="d-flex align-items-center justify-content-center w-100">
-          <div class="row justify-content-center w-100">
-            <div class="col-md-8 col-lg-6 col-xxl-3">
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-12 col-xxl-12">
               <div class="card mb-0">
                 <div class="card-body">
                   <a href="/" class="text-nowrap logo-img text-center d-block mb-5 w-100">
-                    <img src="{{ asset('assets/modernize/images/logos/dark-logo.svg')}}" width="180" alt="">
+                    <img src="{{ asset('assets/img/logo.png')}}" width="180" alt="">
                   </a>
                   <div class="row">
                     <div class="col-6 mb-2 mb-sm-0">
@@ -23,10 +23,6 @@
                         <span class="d-none d-sm-block me-1 flex-shrink-0">Sign in with</span>FB
                       </a>
                     </div>
-                  </div>
-                  <div class="position-relative text-center my-4">
-                    <p class="mb-0 fs-4 px-3 d-inline-block bg-white text-dark z-index-5 position-relative">or sign in with</p>
-                    <span class="border-top w-100 position-absolute top-50 start-50 translate-middle"></span>
                   </div>
                   <form method="POST" action="{{ route('login') }}">
                     @csrf

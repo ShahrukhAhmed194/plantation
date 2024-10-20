@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <!--  Title -->
-        <title>Mordenize</title>
+        <title>Plantation</title>
         <!--  Required Meta Tag -->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,18 +13,19 @@
         <meta name="keywords" content="Mordenize" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!--  Favicon -->
-        <link rel="shortcut icon" type="image/png" href="{{ asset('assets/modernize/images/logos/favicon.png')}}" />
+        <link rel="icon" type="image/x-icon" href="{{asset('assets/img/favicon.png')}}">
         <!-- Core Css -->
         <link  id="themeColors"  rel="stylesheet" href="{{ asset('assets/modernize/css/style.min.css')}}" />
+        <link rel="stylesheet" href="{{ asset('assets/css/login-1.0.0.css')}}" />
       </head>
   <body>
       <!-- Preloader -->
       <div class="preloader">
-        <img src="{{ asset('assets/modernize/images/logos/favicon.png')}}" alt="loader" class="lds-ripple img-fluid" />
+        <img src="{{ asset('assets/img/favicon.png')}}" alt="loader" class="lds-ripple img-fluid" />
       </div>
       <!-- Preloader -->
       <div class="preloader">
-        <img src="{{ asset('assets/modernize/images/logos/favicon.png')}}" alt="loader" class="lds-ripple img-fluid" />
+        <img src="{{ asset('assets/img/favicon.png')}}" alt="loader" class="lds-ripple img-fluid" />
       </div>
       <!--  Body Wrapper -->
       <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">

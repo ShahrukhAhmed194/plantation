@@ -15,7 +15,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!--  Favicon -->
-    <link rel="shortcut icon" type="image/png" href="{{ asset('assets/modernize/images/logos/favicon.png')}}" />
+    <link rel="icon" type="image/x-icon" href="{{asset('assets/img/favicon.png')}}">
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="{{ asset('assets/modernize/dist/libs/owl.carousel/assets/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{ asset('assets/modernize/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css')}}">
@@ -32,11 +32,11 @@
   <body>
       <!-- Preloader -->
       <div class="preloader">
-        <img src="{{ asset('assets/modernize/images/logos/favicon.png')}}" alt="loader" class="lds-ripple img-fluid" />
+        <img src="{{ asset('assets/img/favicon.png')}}" alt="loader" class="lds-ripple img-fluid" />
       </div>
       <!-- Preloader -->
       <div class="preloader">
-        <img src="{{ asset('assets/modernize/images/logos/favicon.png')}}" alt="loader" class="lds-ripple img-fluid" />
+        <img src="{{ asset('assets/img/favicon.png')}}" alt="loader" class="lds-ripple img-fluid" />
       </div>
       <!--  Body Wrapper -->
       <div class="page-wrapper" id="main-wrapper" data-theme="blue_theme"  data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">

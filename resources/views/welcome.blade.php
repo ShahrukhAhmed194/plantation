@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giving Tree</title>
+    <title>Plantation</title>
+    <link rel="icon" type="image/x-icon" href="{{asset('assets/img/favicon.png')}}">
     <link rel="stylesheet" href="{{ asset('assets/css/welcome-1.0.0.css') }}">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">Giving Tree</div>
+        <a href="/home" class="logo">
+            <img src="{{ asset('assets/img/logo.png') }}" alt="Logo" height="50" width="50">
+            <h3>Plantation</h3>
+        </a>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="/home">Gift a Tree</a></li>
                 <li><a href="#contact">Contact Us</a></li>
-                <li>@if (Route::has('login'))
-                    @auth
-                        <a href="{{ url('/home') }}" class="homeBtn">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="logInBtn">Log in</a>
-                    @endauth
-                @endif
-            </li>
+                <li>
+                    @if (Route::has('login'))
+                        @auth
+                            <a href="{{ url('/home') }}" class="homeBtn">Home</a>
+                        @else
+                            <a href="{{ route('login') }}" class="logInBtn">Log in</a>
+                        @endauth
+                    @endif
+                </li>
             </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
+    
 
     <!-- Hero Section -->
     <section id="hero">
@@ -40,10 +51,18 @@
     <!-- About Section -->
     <section id="about">
         <div class="about-content">
-            <h2>About Giving Tree</h2>
-            <p>Our mission is to make the world greener by enabling people to gift trees to their loved ones. Each tree gifted contributes to a healthier planet.</p>
+            <h2>About Plantation</h2>
+            <h3>Growing a Greener Future, One Gift at a Time</h3>
+            <div class="about-columns">
+                <p>At Plantation, we believe that the most meaningful gifts don’t come wrapped in paper—they grow, flourish, and make the world a better place. Our mission is simple yet profound: to inspire people to celebrate life’s moments by gifting trees, leaving behind a legacy that benefits the planet for generations to come.</p>
+    
+                <p>When you gift a tree through Plantation, you're not just offering a present—you’re contributing to a healthier, more sustainable world. Each tree symbolizes hope, love, and renewal. It’s a reminder that even small gestures can spark big environmental changes.</p>
+    
+                <p>Whether it’s a birthday, wedding, or memorial, the gift of a tree is a living testament to your care for the people in your life—and for the planet we all share. Join us in creating a future where every occasion brings us closer to a greener, cleaner world.</p>
+            </div>
         </div>
     </section>
+    
 
     <!-- How It Works Section -->
     <section id="how-it-works">
@@ -69,15 +88,33 @@
 
     <!-- Testimonials Section -->
     <section id="testimonials">
-        <h2>What Our Customers Say</h2>
-        <div class="testimonial">
-            <p>"This is such a thoughtful gift! My friend loved it."</p>
-            <span>- Jane Doe</span>
-        </div>
-        <div class="testimonial">
-            <p>"A wonderful way to give back to the planet and celebrate a special occasion."</p>
-            <span>- John Smith</span>
-        </div>
+        <figure class="snip1533">
+            <figcaption>
+              <blockquote>
+                <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+              </blockquote>
+              <h3>Wisteria Ravenclaw</h3>
+              <h4>Google Inc.</h4>
+            </figcaption>
+          </figure>
+          <figure class="snip1533">
+            <figcaption>
+              <blockquote>
+                <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+              </blockquote>
+              <h3>Ursula Gurnmeister</h3>
+              <h4>Facebook</h4>
+            </figcaption>
+          </figure>
+          <figure class="snip1533">
+            <figcaption>
+              <blockquote>
+                <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+              </blockquote>
+              <h3>Ingredia Nutrisha</h3>
+              <h4>Twitter</h4>
+            </figcaption>
+          </figure>
     </section>
 
     <!-- Call-to-Action Section -->
@@ -117,9 +154,11 @@
         </div>
         <div class="newsletter">
             <label for="newsletter">Register With Us</label>
-            <a href="/register">Subscribe</z>
+            <a href="/register">Ready To Gift</z>
         </div>
-        <p>© 2024 Giving Tree. All rights reserved.</p>
+        <p>© 2024 Plantation. All rights reserved.</p>
     </footer>
+
+    <script src="{{asset('assets/js/welcome-1.0.0.js')}}"></script>
 </body>
 </html>
